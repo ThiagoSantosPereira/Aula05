@@ -18,6 +18,7 @@ public class TeacherHelper {
 			System.out.println("1 - Calcular salário");
 			System.out.println("2 - Calcular média de notas dos alunos");
 			System.out.println("3 - Exibir a motivação do dia!");
+			System.out.println("4 - Sair do sistema!");
 			opcao = leitor.nextInt();
 			
 			switch (opcao) {
@@ -48,6 +49,7 @@ public class TeacherHelper {
 					System.out.println("Digite a nota do " + (i+1) + "º aluno:");
 					notaAluno = leitor.nextDouble();
 					mediaAlunos = mediaAlunos + notaAluno;
+					i++;
 				}
 				mediaAlunos = mediaAlunos / qtdeAlunos;
 				System.out.println("A média de notas dos alunos dessa turma é " + mediaAlunos);
